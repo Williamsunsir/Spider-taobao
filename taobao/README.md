@@ -1,9 +1,6 @@
-<img src="https://img.shields.io/badge/Selenium-3.14-red.svg">
-<img src="https://img.shields.io/badge/Chrome-72.0-brightgreen.svg">
-<img src="https://img.shields.io/badge/ChromeDriver-72.0-blue.svg">
-<img src="https://img.shields.io/badge/mitmproxy-3.0-green.svg">
+<img src="https://img.shields.io/badge/Selenium-3.14-red.svg"><img src="https://img.shields.io/badge/Chrome-72.0-brightgreen.svg"><img src="https://img.shields.io/badge/ChromeDriver-72.0-blue.svg"><img src="https://img.shields.io/badge/mitmproxy-3.0-green.svg">
 
-#淘宝商品信息抓取
+<h1>淘宝商品信息抓取</h1>
 </hr>
 <h2>程序介绍</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019.2月最新更新.淘宝加密繁多，切会出现多次的ip验证，需要使用selenium工具辅助完成，加入自动登录程序，滑块点击验证，中间人修改js文件，等功能。
