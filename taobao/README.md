@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/Selenium-3.14-red.svg"><img src="https://img.shields.io/badge/Chrome-72.0-brightgreen.svg"><img src="https://img.shields.io/badge/ChromeDriver-72.0-blue.svg"><img src="https://img.shields.io/badge/mitmproxy-3.0-green.svg">
+<img src="https://img.shields.io/badge/Selenium-3.14-red.svg">  <img src="https://img.shields.io/badge/Chrome-72.0-brightgreen.svg">  <img src="https://img.shields.io/badge/ChromeDriver-72.0-blue.svg">   <img src="https://img.shields.io/badge/mitmproxy-3.0-green.svg">
 
 <h1>淘宝商品信息抓取</h1>
 </hr>
