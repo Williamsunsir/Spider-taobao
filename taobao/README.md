@@ -4,7 +4,7 @@
 </hr>
 <h2>程序介绍</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019.2月最新更新.淘宝加密繁多，切会出现多次的ip验证，需要使用selenium工具辅助完成，加入自动登录程序，滑块点击验证，中间人修改js文件，等功能。
-    
+
 <h2>Installation</h1>
 1.slenium
 
@@ -41,3 +41,15 @@
 2.执行taobao.py文件，输入自己想要爬去的商品名称。
 
     python taobao.py
+
+
+<h2>Other</h2>
+    最近在朋友的使用下发现，开启开发者模式，也能使滑块通过，可以取消mitmprozy的使用。
+    
+    
+    修改taobao.py如下：
+        注释此段代码#option.add_argument('--proxy-server=127.0.0.1:9000')，同位置新增如下：
+        option.add_experimental_option('excludeSwitches', ['enable-automation'])
+
+在不同的系统和版本测试的时候发现会有滑块不能通过的问题，最后发现是版本的问题，所以请下载指定版本和驱动。
+        
