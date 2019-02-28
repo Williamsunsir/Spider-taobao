@@ -6,18 +6,22 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
 from pyquery import PyQuery as pq
 import pymongo,time
-from taobao.Setting import Username,Password,Host,DBName,ClientName
+from Setting import Username,Password,Host,DBName,ClientName
 from urllib.parse import quote
 
 option = webdriver.ChromeOptions()
 option.add_argument('--proxy-server=127.0.0.1:9000')
-option.add_argument('--headless')
+# option.add_argument('--headless')
 browser = webdriver.Chrome(options=option)
 
 def login(name,password):
 	url = "https://login.taobao.com/member/login.jhtml"
 	browser.get(url)
-	wait.until(EC.presence_of_element_located(By.CSS_SELECTOR("div.login-switch #J_Quick2Static"))).click()
+	# wait.until(EC.presence_of_element_located((By.CSS_SELECTOR()))).click()
+	try:
+		browser.find_element_by_css_selector("div.login-switch #J_Quick2Static").click()
+	except Exception as e:
+		pass
 	browser.find_element_by_id("TPL_username_1").send_keys(name)
 	browser.find_element_by_id("TPL_password_1").send_keys(password)
 	time.sleep(1)
