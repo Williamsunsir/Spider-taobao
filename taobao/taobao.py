@@ -10,9 +10,11 @@ from Setting import Username,Password,Host,DBName,ClientName
 from urllib.parse import quote
 
 option = webdriver.ChromeOptions()
-option.add_argument('--proxy-server=127.0.0.1:9000')
+#option.add_argument('--proxy-server=127.0.0.1:9000')
 # option.add_argument('--headless')
-browser = webdriver.Chrome(options=option)
+
+option.add_experimental_option('excludeSwitches', ['enable-automation'])
+driver = Chrome(options=option)
 
 def login(name,password):
 	url = "https://login.taobao.com/member/login.jhtml"
@@ -36,7 +38,7 @@ def login(name,password):
 	browser.find_element_by_id("J_SubmitStatic").click()
 	
 def index_page(page):
-	print("正在爬去第",page,"页")
+	print("正在爬取第",page,"页")
 	try:
 		browser.get("https://s.taobao.com/search?q="+quote(ShopName))
 		try:
