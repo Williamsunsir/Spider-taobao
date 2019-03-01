@@ -14,7 +14,7 @@ option = webdriver.ChromeOptions()
 # option.add_argument('--headless')
 
 option.add_experimental_option('excludeSwitches', ['enable-automation'])
-driver = Chrome(options=option)
+browser = Chrome(options=option)
 
 def login(name,password):
 	url = "https://login.taobao.com/member/login.jhtml"
